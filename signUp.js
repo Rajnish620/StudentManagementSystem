@@ -35,11 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (email === StoreEmail) {
       alert("This Email is allready exist");
-
-      if (password !== Storepassword) {
-        alert("Enter valid passward");
+       window.location.href = "./login.html";
         return;
-      }
+      
     }
     localStorage.setItem("fname'''''", fname);
     localStorage.setItem("lname", lname);
