@@ -59,6 +59,6 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("students", allStudents);
 
         alert("Student Registered Successfully");
-        window.location.href = "/dashboard.html";
+        window.location.href = "./dashboard.html";
     });
 });

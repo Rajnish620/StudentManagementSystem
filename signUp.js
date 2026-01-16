@@ -35,6 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     alert("Signup Successful!");
     signupBtn.style.AnimationOfButton;
-    window.location.href = "/login.html";
+    window.location.href = "./login.html";
   });
 });
