@@ -7,6 +7,10 @@
     body{
         background-color: black;
     }
+    body h1{
+        text-align: center;
+        margin-top: 20px;
+    }
     .Registration-container ,
     .login-container ,
     .Delete-container,

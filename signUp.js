@@ -8,26 +8,40 @@ document.addEventListener("DOMContentLoaded", () => {
     const password = document.getElementById("Password").value;
     const age = document.getElementById("Age").value;
 
-    
+    const StoreEmail = localStorage.getItem("email");
+    const Storepassword = localStorage.getItem("password");
 
-    if (fname === "" || lname === "" || email==="" || password==="" || age === "") {
+    if (
+      fname === "" ||
+      lname === "" ||
+      email === "" ||
+      password === "" ||
+      age === ""
+    ) {
       alert("All fields are required");
       return;
     }
 
     if (email.endsWith("@gmail.com")) {
     } else {
-      alert("Only Gmail allowed");
+      alert("....@gmail.com");
       return;
     }
-    if(password.length >=6){
-
-    }else{
-        alert("Password must be at least 6 characters");
-        return;
+    if (password.length >= 6) {
+    } else {
+      alert("Password must be at least 6 characters");
+      return;
     }
 
-    localStorage.setItem("fname", fname);
+    if (email === StoreEmail) {
+      alert("This Email is allready exist");
+
+      if (password !== Storepassword) {
+        alert("Enter valid passward");
+        return;
+      }
+    }
+    localStorage.setItem("fname'''''", fname);
     localStorage.setItem("lname", lname);
     localStorage.setItem("email", email);
     localStorage.setItem("password", password);

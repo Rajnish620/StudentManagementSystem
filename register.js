@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
 
     Regbutton.addEventListener("click", () => {
+        localStorage.setItem("students","");
         const name = document.getElementById("name").value;
         const RegNumber = document.getElementById("Reg-number").value;
         const roll = document.getElementById("Roll").value;
