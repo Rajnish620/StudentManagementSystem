@@ -11,11 +11,12 @@
         color: aquamarine;
         text-align: center;
         
+        
     }
     hr{
         border: none;
         border-bottom:1px solid gray ;
-        margin: 5px 30px;
+        margin: 10px 30px;
        
     }
     .dashboard-container{
