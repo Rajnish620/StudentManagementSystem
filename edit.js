@@ -28,5 +28,5 @@ document.getElementById("editBtn").addEventListener("click", function () {
     localStorage.setItem("editStudent", foundStudent);
 
     
-    window.location.href = "./EditData.html";
+    window.location.href = "/StudentManagementSystem/EditData.html";
 });

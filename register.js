@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
 
     Regbutton.addEventListener("click", () => {
-        localStorage.setItem("students","");
+        
         const name = document.getElementById("name").value;
         const RegNumber = document.getElementById("Reg-number").value;
         const roll = document.getElementById("Roll").value;
@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (details[1] === RegNumber) {
            alert("This Reg. Number allready exist");
+           return;
         }
         if(details[3]===className){
             if(details[2]===roll){
@@ -60,6 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("students", allStudents);
 
         alert("Student Registered Successfully");
-        window.location.href = "./dashboard.html";
+        window.location.href = "/StudentManagementSystem/dashboard.html";
     });
 });

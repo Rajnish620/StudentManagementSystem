@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (email === StoreEmail) {
       alert("This Email is allready exist");
-       window.location.href = "./login.html";
+       window.location.href = "/StudentManagementSystem/login.html";
         return;
       
     }
@@ -47,6 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     alert("Signup Successful!");
     signupBtn.style.AnimationOfButton;
-    window.location.href = "./login.html";
+    window.location.href = "/StudentManagementSystem/login.html";
   });
 });
