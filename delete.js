@@ -46,6 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         alert("Student Deleted Successfully");
-        window.location.href = "/StudentManagementSystem/dashboard.html";
+        window.location.href = "/dashboard.html";
     });
 });

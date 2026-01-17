@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (gmail === storedEmail && password === storedPassword) {
             alert("Login Successful!");
-            window.location.href = "/StudentManagementSystem/dashboard.html";
+            window.location.href = "/dashboard.html";
         } else {
             alert("Invalid Email or Password");
         }

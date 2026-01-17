@@ -46,5 +46,5 @@ document.getElementById("saveEdit").addEventListener("click", function () {
     localStorage.removeItem("editStudent");
 
     alert("Student data updated successfully");
-    window.location.href = "/StudentManagementSystem/dashboard.html";
+    window.location.href = "/dashboard.html";
 });  
